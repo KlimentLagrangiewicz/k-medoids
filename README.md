@@ -1,11 +1,22 @@
 # k-medoids
-Implementation of k-medoids algorithm in C (standart C89/C90)  
+Implementation of k-medoids algorithm in C programming language
 ## Example of usage
+Cloning project and changing current directory:
 ```
 git clone https://github.com/KlimentLagrangiewicz/k-medoids
-cd k-medoids/  
-cmake .  
-cmake --build .  
-./k-medoids ./examplesDataSets/iris/test150 150 4 3 ./examplesDataSets/iris/resultFull ./examplesDataSets/iris/ideal150
- ```
+cd k-medoids
+```
+Building from source (Linux):
+```
+make
+```
+Building from source (Windows):
+```
+make windows
+```
+If building was ok, you can find executable file in `bin` subdirectory.  
+Run the program:
+```
+./bin/k-medoids ./datasets/iris/data.txt 150 4 3 ./datasets/iris/new_result.txt ./datasets/iris/res.txt
 
+```
